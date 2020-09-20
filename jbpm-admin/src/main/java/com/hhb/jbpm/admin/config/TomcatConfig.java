@@ -36,7 +36,7 @@ public class TomcatConfig {
 				resource.setName("jdbc/kpi");
 				resource.setProperty("factory", "org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory");
 				resource.setProperty("driverClassName", "com.mysql.cj.jdbc.Driver");
-				resource.setProperty("url", "jdbc:mysql://localhost:3307/jbpm?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Chongqing");
+				resource.setProperty("url", "jdbc:mysql://localhost:3306/jbpm?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT");
 				resource.setProperty("username", "root");
 				resource.setProperty("password", "root");
 				context.getNamingResources().addResource(resource);

@@ -18,10 +18,13 @@ public class KpiRole implements GrantedAuthority {
 
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO)
+	@Column(name = "id")
 	private int id;
 
+	@Column(name = "rolename")
 	private String rolename;
 
+	@Column(name = "status")
 	private int status;
 
 	@Override

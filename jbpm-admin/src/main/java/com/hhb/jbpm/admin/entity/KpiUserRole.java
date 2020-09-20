@@ -15,10 +15,13 @@ public class KpiUserRole {
 
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO)
+	@Column(name = "id")
 	private int id;
 
+	@Column(name = "rid")
 	private int rid;
 
+	@Column(name = "uid")
 	private int uid;
 
 	@Override

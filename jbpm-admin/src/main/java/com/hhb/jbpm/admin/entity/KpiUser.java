@@ -23,14 +23,19 @@ public class KpiUser implements UserDetails {
 
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO)
+	@Column(name = "id")
 	private int id;
 
+	@Column(name = "username")
 	private String username;
 
+	@Column(name = "password")
 	private String password;
 
+	@Column(name = "age")
 	private int age;
 
+	@Column(name = "status")
 	private int status;
 
 	@ManyToMany(cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.REMOVE}, fetch = FetchType.EAGER)

@@ -51,7 +51,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			@Override
 			public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException arg2)
 					throws IOException, ServletException {
-				response.sendRedirect("/spring/kpi/error");
+				response.sendRedirect("/kpi/error");
 			}
 		}).and().httpBasic()
 				.and().headers().frameOptions().disable().and().formLogin().usernameParameter("username").passwordParameter("password").loginProcessingUrl("/login").and()
@@ -60,7 +60,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			@Override
 			public void onLogoutSuccess(HttpServletRequest request, HttpServletResponse response, Authentication arg2)
 					throws IOException, ServletException {
-				response.sendRedirect("/spring/kpi/index");
+				response.sendRedirect("/kpi/index");
 
 			}
 		});

@@ -26,7 +26,7 @@ public class JbpmConfig {
 		RuntimeEnvironment runtimeEnvironment = RuntimeEnvironmentBuilder.Factory.get()
 				.newDefaultBuilder().entityManagerFactory(entityManagerFactory)
 				//Test.bpmn放置于resource文件夹下
-				.addAsset(ResourceFactory.newClassPathResource("Test.bpmn"), ResourceType.BPMN2)
+				.addAsset(ResourceFactory.newClassPathResource("test.bpmn"), ResourceType.BPMN2)
 				.get();
 		return runtimeEnvironment;
 	}

@@ -1,6 +1,8 @@
 package com.hhb.jbpm.admin.service;
 
 import com.hhb.jbpm.admin.dao.KpiUserRepository;
+import com.hhb.jbpm.admin.entity.KpiUser;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
